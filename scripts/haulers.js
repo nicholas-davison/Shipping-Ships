@@ -1,6 +1,20 @@
 import { getHaulers, getShips } from "./database.js"
-const haulers = getHaulers()
 const ships = getShips()
+
+export const haulerList = () => {
+    
+    const haulers = getHaulers()
+    haulers.sort((a, b) => a.name.localeCompare(b.name))
+    
+    let haulersHTML = "<ul class='list'>"
+    
+    for (const hauler of haulers) {
+        haulersHTML += `<li class="item" data-type="hauler" data-id="${hauler.id}">${hauler.name}</li>`
+    }
+    haulersHTML += "</ul>"
+    
+    return haulersHTML
+}
 document.addEventListener(
     "click",
     (clickEvent) => {
@@ -29,16 +43,3 @@ document.addEventListener(
 
     }
 )
-
-export const haulerList = () => {
-
-    
-    let haulersHTML = "<ul>"
-
-    for (const hauler of haulers) {
-        haulersHTML += `<li data-type="hauler" data-id="${hauler.id}">${hauler.name}</li>`
-    }
-    haulersHTML += "</ul>"
-
-    return haulersHTML
-}

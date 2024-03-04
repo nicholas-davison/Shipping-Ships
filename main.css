@@ -4,20 +4,21 @@ h1 {
 .details {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
 .details--list-column {
     display: flex;
-    border: solid red 1px;
     flex-direction: column;
-    flex-basis: 25%;
+    border: solid red 1px;
  }
 
 ul {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
 
 }
 li {
@@ -26,3 +27,4 @@ li {
     margin: 5px;
     align-items: stretch;
 }
+

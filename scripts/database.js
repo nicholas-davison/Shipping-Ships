@@ -3,22 +3,26 @@ const database = {
         { 
             id: 1,
             location: "Shanghai, China",
-            volume: "43.5" 
+            volume: "43.5",
+            haulerIDs: [1,2] 
         },
         { 
             id: 2,
             location: "Busan, South Korea",
-            volume: "21.6" 
+            volume: "21.6",
+            haulerIDs: [3,4]
         },
         { 
             id: 3,
             location: "Rotterdam, The Netherlands",
-            volume: "14.35" 
+            volume: "14.35",
+            haulerIDs: [5,6] 
         },
         { 
             id: 4,
             location: "Antwerp, Belgium",
-            volume: "12.04" 
+            volume: "12.04",
+            haulerIDs: [1,6]
         }
     ],
     haulers: [
