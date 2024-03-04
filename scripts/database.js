@@ -44,12 +44,12 @@ const database = {
         },
         {
             id: 5,
-            dockID: 1,
+            dockID: 2,
             name: "Space Potato Hauler"
         },
         {
             id: 6,
-            dockID: 4,
+            dockID: 3,
             name: "Big Booty Barge"
         },
     ],
