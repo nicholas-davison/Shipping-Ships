@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.details--list-column {
+    display: flex;
+    border: solid red 1px;
+    flex-direction: column;
+    flex-basis: 25%;
+ }
+
+ul {
+    display: flex;
+    flex-direction: column;
+
+}
+li {
+    border: solid slateblue 1px;
+    list-style: none;
+    margin: 5px;
+    align-items: stretch;
+}
